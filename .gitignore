@@ -1,0 +1,5 @@
+#Ignore MacOS Stuff
+.DS_Store
+
+#Ignore scss map files
+*.css.map
