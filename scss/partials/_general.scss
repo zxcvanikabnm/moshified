@@ -71,3 +71,33 @@ a {
     font-size: 1.5rem;
   }
 }
+
+// Badges
+.badge {
+  border-radius: 20px;
+  color: $color-badge;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+
+  @include desktop {
+    font-size: 1.5rem;
+  }
+
+  &--primary {
+    background: $color-primary;
+  }
+
+  &--secondary {
+    background: $color-secondary;
+  }
+
+  &--small {
+    font-size: 1.6rem;
+
+    @include desktop {
+      font-size: 1.2rem;
+    }
+  }
+}

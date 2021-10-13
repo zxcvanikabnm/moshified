@@ -439,4 +439,37 @@ a {
     font-size: 1.5rem;
   }
 }
+
+.badge {
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+}
+
+.badge--primary {
+  background: #2584ff;
+}
+
+.badge--secondary {
+  background: #00d9ff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
