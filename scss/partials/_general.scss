@@ -127,3 +127,23 @@ a {
     }
   }
 }
+
+// Icons
+.icon {
+  width: 40px;
+  height: 40px;
+
+  &--primary {
+    fill: $color-primary;
+  }
+
+  &-container {
+    background: $icon-container-bg;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
