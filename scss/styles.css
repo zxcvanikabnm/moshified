@@ -359,6 +359,13 @@ template {
   font-weight: 700;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   margin: 0 auto;
   font-size: 10px;
@@ -523,5 +530,67 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+.btn--primary {
+  background: #2584ff;
+  color: #ffffff;
+}
+
+.btn--primary:hover {
+  background: #58a1ff;
+}
+
+.btn--secondary {
+  background: #00d9ff;
+  color: #ffffff;
+}
+
+.btn--secondary:hover {
+  background: #33e1ff;
+}
+
+.btn--accent {
+  background: #ff3400;
+  color: #ffffff;
+}
+
+.btn--accent:hover {
+  background: #ff5d33;
+}
+
+.btn--outline {
+  background: #ffffff;
+  color: #1b0760;
+  border: 2px solid #1b0760;
+}
+
+.btn--outline:hover {
+  background: #1b0760;
+  color: #ffffff;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
 }
 /*# sourceMappingURL=styles.css.map */
