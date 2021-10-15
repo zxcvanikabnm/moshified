@@ -609,6 +609,26 @@ a {
   }
 }
 
+.input-group {
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
 ::-webkit-input-placeholder {
   color: #cdcbd7;
 }
