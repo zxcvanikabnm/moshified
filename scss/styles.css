@@ -593,4 +593,35 @@ a {
   width: 100%;
   display: inline-block;
 }
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  outline: 0;
+  color: #1b0760;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #cdcbd7;
+}
+
+:-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+::-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
 /*# sourceMappingURL=styles.css.map */
