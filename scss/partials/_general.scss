@@ -322,4 +322,17 @@ a {
   & .list__item {
     margin-bottom: 2rem;
   }
+
+  &--popular .card__header {
+    position: relative;
+  }
+
+  &--popular .card__header::before {
+    content: url(./../../assets/images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: -6px;
+  }
 }
