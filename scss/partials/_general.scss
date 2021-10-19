@@ -101,6 +101,7 @@ a {
 
   &--small {
     font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
 
     @include desktop {
       font-size: 1.2rem;
@@ -268,5 +269,57 @@ a {
   &--secondary &__header {
     background: $color-secondary;
     color: #ffffff;
+  }
+
+  &--secondary .badge--secondary {
+    background: #02cdf1;
+  }
+}
+
+// Plans
+.plan {
+  &__name {
+    color: #ffffff;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.4rem;
+
+    @include desktop {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__price {
+    font-size: 6rem;
+
+    @include desktop {
+      font-size: 5rem;
+    }
+  }
+
+  &__billing-cycle {
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+
+    @include desktop {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__description {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+
+    @include desktop {
+      font-size: 1.7rem;
+    }
+  }
+
+  & .list__item {
+    margin-bottom: 2rem;
   }
 }
