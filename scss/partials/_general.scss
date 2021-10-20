@@ -336,3 +336,20 @@ a {
     top: -6px;
   }
 }
+
+// Media
+.media {
+  display: flex;
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__body {
+    margin: 0 2rem;
+  }
+
+  &__image {
+    margin-top: 1rem;
+  }
+}
