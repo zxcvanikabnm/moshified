@@ -140,8 +140,17 @@ a {
   width: 40px;
   height: 40px;
 
+  &--small {
+    width: 30px;
+    height: 30px;
+  }
+
   &--primary {
     fill: $color-primary;
+  }
+
+  &--white {
+    fill: #ffffff;
   }
 
   &-container {
@@ -152,6 +161,10 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &-container--accent {
+    background: $color-accent;
   }
 }
 
@@ -418,5 +431,34 @@ a {
     @include desktop {
       grid-template-columns: 1fr 1fr 1fr;
     }
+  }
+}
+
+// Testimonials
+.testimonial {
+  padding: 3rem;
+
+  @include tablet {
+    & .quote,
+    & .quote__author {
+      font-size: 2.4rem;
+    }
+
+    & .quote {
+      margin-left: 6rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__image > img {
+    width: 100%;
+  }
+  &__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
   }
 }
