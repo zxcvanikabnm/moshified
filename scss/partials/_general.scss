@@ -404,3 +404,19 @@ a {
     }
   }
 }
+
+// Grids
+.grid {
+  display: grid;
+
+  &--1x2 {
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &--1x3 {
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
