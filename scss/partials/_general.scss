@@ -227,6 +227,11 @@ a {
     width: 100%;
     display: inline-block;
   }
+
+  &--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
 }
 
 // Inputs
@@ -460,5 +465,46 @@ a {
     position: absolute;
     top: 3rem;
     right: -32px;
+  }
+}
+
+// Callouts
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+
+  &--primary {
+    background: $color-primary;
+    color: #ffffff;
+  }
+
+  &__heading {
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
+  & .btn {
+    justify-self: center;
+    align-self: center;
+
+    @include tablet {
+      justify-self: start;
+      margin: 0 2rem;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  & .grid--1x2 {
+    @include tablet {
+      grid-template-columns: 1fr auto;
+    }
   }
 }
